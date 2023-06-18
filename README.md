@@ -27,7 +27,7 @@ Pay attention to checking the following environment variable
     gedit ~/.bashrc
     source ~/${YOUR_WORKSPACE_PATH}/devel/setup.bash
 
-# 3、运行代码
+# 3、Examples
 
 Example 1: fault-tolerant control for a quadrotor UAV with a total rotor failure.
 
@@ -66,7 +66,7 @@ Run the chap05.slx (uav_ftc/simulink code/code) in simulink, and wait for the UA
 Create a new terminal and run
 
     roscd ftc_ctrl && cd scripts
-    ./start_uavs.sh hummingbird
+    ./start_uavs.sh
 
 
 
