@@ -1,0 +1,77 @@
+<launch>
+  <arg name="mav_name" default="hummingbird"/>
+  <arg name="world_name" default="basic"/>
+  <arg name="enable_logging" default="false" />
+  <arg name="enable_ground_truth" default="true" />
+  <arg name="log_file" default="$(arg mav_name)" />
+  <arg name="debug" default="false"/>
+  <arg name="gui" default="true"/>
+  <arg name="paused" default="true"/>
+  <arg name="verbose" default="false"/>
+
+  <node pkg="offboard" name="offboard_node4" type="offboard_node4" output="screen" />
+  <!-- <node pkg="chap04_gazebo" name="chap04_gazebo_node" type="chap04_gazebo_node" output="screen" /> -->
+
+  <group ns="uav1">
+    <node pkg="ftc_ctrl" name="ftc_ctrl" type="ftc_ctrl" output="screen" >
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="rotors_interface" name="rotors_interface" type="rotors_interface" output="screen">
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="offboard" name="offboard_node" type="offboard_node" output="screen" />
+  </group>
+
+  <group ns="uav2">
+    <node pkg="ftc_ctrl" name="ftc_ctrl" type="ftc_ctrl" output="screen" >
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="rotors_interface" name="rotors_interface" type="rotors_interface" output="screen">
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="offboard" name="offboard_node" type="offboard_node" output="screen" />
+  </group>
+
+  <group ns="uav3">
+    <node pkg="ftc_ctrl" name="ftc_ctrl" type="ftc_ctrl" output="screen" >
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="rotors_interface" name="rotors_interface" type="rotors_interface" output="screen">
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="offboard" name="offboard_node" type="offboard_node" output="screen" />
+  </group>
+
+  <group ns="uav4">
+    <node pkg="ftc_ctrl" name="ftc_ctrl" type="ftc_ctrl" output="screen" >
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="rotors_interface" name="rotors_interface" type="rotors_interface" output="screen">
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="offboard" name="offboard_node" type="offboard_node" output="screen" />
+  </group>
+
+  <group ns="uav5">
+    <node pkg="ftc_ctrl" name="ftc_ctrl" type="ftc_ctrl" output="screen" >
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="rotors_interface" name="rotors_interface" type="rotors_interface" output="screen">
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="offboard" name="offboard_node" type="offboard_node" output="screen" />
+  </group>
+
+  <group ns="uav6">
+    <node pkg="ftc_ctrl" name="ftc_ctrl" type="ftc_ctrl" output="screen" >
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="rotors_interface" name="rotors_interface" type="rotors_interface" output="screen">
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
+    </node>
+    <node pkg="offboard" name="offboard_node" type="offboard_node" output="screen" />
+  </group>
+
+  <!-- <node pkg="offboard" name="rotor_control_test" type="rotor_control_test" /> -->
+
+</launch>

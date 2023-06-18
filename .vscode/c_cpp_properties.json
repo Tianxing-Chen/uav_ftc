@@ -1,0 +1,48 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/chen/fault_tolerant/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/chen/fault_tolerant/src/eigen_checks/include/**",
+        "/home/chen/fault_tolerant/src/fast_neon/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/ftc_ctrl/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/ftc_state_est/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/imp/imp_bridge_opencv/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/imp/imp_bridge_ros/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/imp/imp_core/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/imp/imp_correspondence/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/imp/imp_features/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/imp/imp_imgproc/include/**",
+        "/home/chen/fault_tolerant/src/mav_comm/mav_msgs/include/**",
+        "/home/chen/fault_tolerant/src/mav_comm/mav_planning_msgs/include/**",
+        "/home/chen/fault_tolerant/src/minkindr/minkindr/include/**",
+        "/home/chen/fault_tolerant/src/numpy_eigen/include/**",
+        "/home/chen/fault_tolerant/src/opengv/include/**",
+        "/home/chen/fault_tolerant/src/rotors_simulator/rotors_control/include/**",
+        "/home/chen/fault_tolerant/src/rotors_simulator/rotors_gazebo_plugins/include/**",
+        "/home/chen/fault_tolerant/src/rotors_simulator/rotors_hil_interface/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/rotors_interface/include/**",
+        "/home/chen/fault_tolerant/src/rotors_simulator/rotors_joy_interface/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/common/ze_cameras/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/applications/ze_ceres_backend/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/common/ze_common/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/common/ze_data_provider/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/common/ze_geometry/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/common/ze_imu/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/common/ze_ros/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/applications/ze_vio_ceres/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/common/ze_vio_common/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/applications/ze_vio_frontend/include/**",
+        "/home/chen/fault_tolerant/src/fault_tolerant_control/vio_estimator/ui/ze_visualization/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

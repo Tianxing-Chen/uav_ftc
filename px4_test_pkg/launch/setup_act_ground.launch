@@ -1,0 +1,11 @@
+<launch>
+     <!-- vrpn 考虑放到地面端？ -->
+     <include file="$(find vrpn_client_ros)/launch/sample.launch">
+		<arg name="server" value="192.168.1.2"/>
+     </include>
+
+     <node pkg="vrpn_client_ros" name="vrpn_ros_node" type="vrpn_client_node"/>
+     <node pkg="px4_test_pkg" type="console" name="console" output="screen" launch-prefix="gnome-terminal --tab --" />
+    
+</launch>
+

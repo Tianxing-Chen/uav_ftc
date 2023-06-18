@@ -1,0 +1,26 @@
+<launch>
+  <arg name="mav_name" default="hummingbird"/>
+  <arg name="world_name" default="basic"/>
+  <arg name="enable_logging" default="false" />
+  <arg name="enable_ground_truth" default="true" />
+  <arg name="log_file" default="$(arg mav_name)" />
+  <arg name="debug" default="false"/>
+  <arg name="gui" default="true"/>
+  <arg name="paused" default="true"/>
+  <arg name="verbose" default="false"/>
+
+  <group ns="$(arg mav_name)">
+    <node pkg="ftc_ctrl" name="ftc_ctrl" type="ftc_ctrl" output="screen" >
+        <rosparam file="$(find ftc_ctrl)/parameters/setup_test.yaml"/>
+    </node>
+    <node pkg="rotors_interface" name="rotors_interface" type="rotors_interface" output="screen">
+        <rosparam file="$(find ftc_ctrl)/parameters/setup_test.yaml"/>
+    </node>
+  </group>
+     <node pkg="offboard" name="rotor_control_test" type="rotor_control_test" />
+     <!-- vrpn 考虑放到地面端？ -->
+     <include file="$(find vrpn_client_ros)/launch/sample.launch">
+		<arg name="server" value="192.168.1.2"/>
+     </include>
+     <node pkg="vrpn_client_ros" name="vrpn_ros_node" type="vrpn_client_node"/>
+</launch>

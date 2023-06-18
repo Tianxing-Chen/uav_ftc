@@ -1,0 +1,8 @@
+mavros/mavros_extras
+/home/chen/fault_tolerant_control/devel/.private/mavros_extras/cmake.lock /home/chen/fault_tolerant_control/devel/./cmake.lock
+/home/chen/fault_tolerant_control/devel/.private/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake /home/chen/fault_tolerant_control/devel/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake
+/home/chen/fault_tolerant_control/devel/.private/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig.cmake /home/chen/fault_tolerant_control/devel/share/mavros_extras/cmake/mavros_extrasConfig.cmake
+/home/chen/fault_tolerant_control/devel/.private/mavros_extras/lib/libmavros_extras.so /home/chen/fault_tolerant_control/devel/lib/libmavros_extras.so
+/home/chen/fault_tolerant_control/devel/.private/mavros_extras/lib/mavros_extras/visualization /home/chen/fault_tolerant_control/devel/lib/mavros_extras/visualization
+/home/chen/fault_tolerant_control/devel/.private/mavros_extras/lib/mavros_extras/servo_state_publisher /home/chen/fault_tolerant_control/devel/lib/mavros_extras/servo_state_publisher
+/home/chen/fault_tolerant_control/devel/.private/mavros_extras/lib/pkgconfig/mavros_extras.pc /home/chen/fault_tolerant_control/devel/lib/pkgconfig/mavros_extras.pc

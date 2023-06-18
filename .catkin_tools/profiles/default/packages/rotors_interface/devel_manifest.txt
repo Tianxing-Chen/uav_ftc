@@ -1,0 +1,6 @@
+rotors_interface
+/home/chen/fault_tolerant_control/devel/.private/rotors_interface/cmake.lock /home/chen/fault_tolerant_control/devel/./cmake.lock
+/home/chen/fault_tolerant_control/devel/.private/rotors_interface/share/rotors_interface/cmake/rotors_interfaceConfig.cmake /home/chen/fault_tolerant_control/devel/share/rotors_interface/cmake/rotors_interfaceConfig.cmake
+/home/chen/fault_tolerant_control/devel/.private/rotors_interface/share/rotors_interface/cmake/rotors_interfaceConfig-version.cmake /home/chen/fault_tolerant_control/devel/share/rotors_interface/cmake/rotors_interfaceConfig-version.cmake
+/home/chen/fault_tolerant_control/devel/.private/rotors_interface/lib/rotors_interface/rotors_interface /home/chen/fault_tolerant_control/devel/lib/rotors_interface/rotors_interface
+/home/chen/fault_tolerant_control/devel/.private/rotors_interface/lib/pkgconfig/rotors_interface.pc /home/chen/fault_tolerant_control/devel/lib/pkgconfig/rotors_interface.pc

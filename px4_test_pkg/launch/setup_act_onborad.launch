@@ -1,0 +1,20 @@
+<launch>
+    <!-- n号飞机 -->
+    <group ns="uav1">
+			<!-- 启动MAVROS -->
+			<node pkg="mavros" type="mavros_node" name="mavros" output="screen">
+				<param name="fcu_url" value="/dev/ttyUSB0:921600" />
+				<param name="gcs_url" value="" />
+				<param name="target_system_id" value="1" />
+				<param name="target_component_id" value="1" />
+				<rosparam command="load" file="$(find px4_test_pkg)/launch/px4_pluginlists.yaml" />
+				<rosparam command="load" file="$(find px4_test_pkg)/launch/px4_config.yaml" />
+			</node>
+    </group>
+
+	<group ns="uav1">
+        <node pkg="px4_test_pkg" type="controller_node" name="controller_node" output="screen">
+				<param name="uav_name" value="uav1" />
+        </node>
+    </group>
+</launch>

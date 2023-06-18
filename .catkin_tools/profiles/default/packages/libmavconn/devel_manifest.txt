@@ -1,0 +1,7 @@
+mavros/libmavconn
+/home/chen/uav_ftc/devel/.private/libmavconn/cmake.lock /home/chen/uav_ftc/devel/./cmake.lock
+/home/chen/uav_ftc/devel/.private/libmavconn/share/libmavconn/cmake/libmavconnConfig-version.cmake /home/chen/uav_ftc/devel/share/libmavconn/cmake/libmavconnConfig-version.cmake
+/home/chen/uav_ftc/devel/.private/libmavconn/share/libmavconn/cmake/libmavconn-extras.cmake /home/chen/uav_ftc/devel/share/libmavconn/cmake/libmavconn-extras.cmake
+/home/chen/uav_ftc/devel/.private/libmavconn/share/libmavconn/cmake/libmavconnConfig.cmake /home/chen/uav_ftc/devel/share/libmavconn/cmake/libmavconnConfig.cmake
+/home/chen/uav_ftc/devel/.private/libmavconn/lib/libmavconn.so /home/chen/uav_ftc/devel/lib/libmavconn.so
+/home/chen/uav_ftc/devel/.private/libmavconn/lib/pkgconfig/libmavconn.pc /home/chen/uav_ftc/devel/lib/pkgconfig/libmavconn.pc

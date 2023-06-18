@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="px4_test_pkg" type="console" name="console_uav" output="screen" launch-prefix="gnome-terminal --tab --" >
+        <param name="uav_name" value="uav1" />
+    </node>
+</launch>

@@ -1,0 +1,10 @@
+mavros/mavros
+/home/chen/fault_tolerant_control/devel/.private/mavros/cmake.lock /home/chen/fault_tolerant_control/devel/./cmake.lock
+/home/chen/fault_tolerant_control/devel/.private/mavros/share/mavros/cmake/mavrosConfig-version.cmake /home/chen/fault_tolerant_control/devel/share/mavros/cmake/mavrosConfig-version.cmake
+/home/chen/fault_tolerant_control/devel/.private/mavros/share/mavros/cmake/mavrosConfig.cmake /home/chen/fault_tolerant_control/devel/share/mavros/cmake/mavrosConfig.cmake
+/home/chen/fault_tolerant_control/devel/.private/mavros/lib/libmavros_plugins.so /home/chen/fault_tolerant_control/devel/lib/libmavros_plugins.so
+/home/chen/fault_tolerant_control/devel/.private/mavros/lib/libmavros.so /home/chen/fault_tolerant_control/devel/lib/libmavros.so
+/home/chen/fault_tolerant_control/devel/.private/mavros/lib/mavros/mavros_node /home/chen/fault_tolerant_control/devel/lib/mavros/mavros_node
+/home/chen/fault_tolerant_control/devel/.private/mavros/lib/mavros/gcs_bridge /home/chen/fault_tolerant_control/devel/lib/mavros/gcs_bridge
+/home/chen/fault_tolerant_control/devel/.private/mavros/lib/python2.7/dist-packages/mavros/__init__.py /home/chen/fault_tolerant_control/devel/lib/python2.7/dist-packages/mavros/__init__.py
+/home/chen/fault_tolerant_control/devel/.private/mavros/lib/pkgconfig/mavros.pc /home/chen/fault_tolerant_control/devel/lib/pkgconfig/mavros.pc
