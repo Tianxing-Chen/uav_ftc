@@ -31,16 +31,23 @@ Pay attention to checking the following environment variable
 Example 1: fault-tolerant control for a quadrotor UAV with a total rotor failure.
 
 Create a new terminal
+
     roslaunch px4 multi_uav_mavros_sitl.launch
 
 Create a new terminal
+
     roslaunch ftc_ctrl testgazebo.launch
 
 Create a new terminal
+
     roscd ftc_ctrl && cd scripts
+
 Run at normal model
+
     ./start_rotors.sh hummingbird
+    
 Run at failure model
+
     ./stop_rotor.sh hummingbird
 
 # 注意事项
