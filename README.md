@@ -6,7 +6,7 @@
 
 2）Configure the PX4 Gazebo simulation required environment.
 
-Pay attention to checking the following environment variables
+check the following environment variables
 
     gedit ~/.bashrc
     source ~/PX4-Autopilot/Tools/setup_gazebo.bash ~/PX4-Autopilot/ ~/PX4-Autopilot/build/px4_sitl_default
@@ -22,18 +22,20 @@ Download and compile the project
     cd ../ 
     catkin build
 
-Pay attention to checking the following environment variable
+check the following environment variable
 
     gedit ~/.bashrc
     source ~/${YOUR_WORKSPACE_PATH}/devel/setup.bash
 
-# 3、运行代码
+# 3、Examples
 
-Example 1: fault-tolerant control for a quadrotor UAV with a total rotor failure.
+<!-- ## Example 1: fault-tolerant control for a quadrotor UAV with a total rotor failure.
 
 Create a new terminal and run, please using the  setting in 
 
-    roslaunch px4 multi_uav_mavros_sitl.launch
+    roslaunch ftc_ctrl single_uav_mavros_sitl.launch
+
+check the parameter MC_FTC_MODE = 1 of uav0 in QGC
 
 Create a new terminal and run
 
@@ -45,17 +47,27 @@ Create a new terminal and run
 
 Run at normal model
 
-    ./start_rotors.sh hummingbird
+    ./start_rotors.sh uav0
 
 Run at failure model
 
-    ./stop_rotor.sh hummingbird
+    ./stop_rotor.sh uav0 -->
 
-Example 2: formation control for multiple quadrotor UAVs.
+## Example 1: formation control for multiple quadrotor UAVs.
 
 Create a new terminal and run, please using the  setting in 
 
-    roslaunch px4 multi_uav_mavros_sitl.launch
+    roslaunch ftc_ctrl multi_uav_mavros_sitl.launch
+
+check the following parameters in QGC
+
+    uav0, MC_FTC_MODE = 0;
+    uav1, MC_FTC_MODE = 1;
+    uav2, MC_FTC_MODE = 1;
+    uav3, MC_FTC_MODE = 1;
+    uav4, MC_FTC_MODE = 1;
+    uav5, MC_FTC_MODE = 1;
+    uav6, MC_FTC_MODE = 1;
 
 Create a new terminal and run
 
@@ -66,7 +78,7 @@ Run the chap05.slx (uav_ftc/simulink code/code) in simulink, and wait for the UA
 Create a new terminal and run
 
     roscd ftc_ctrl && cd scripts
-    ./start_uavs.sh hummingbird
+    ./start_uavs.sh 
 
 
 

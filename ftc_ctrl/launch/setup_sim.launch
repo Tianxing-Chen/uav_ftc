@@ -9,15 +9,15 @@
   <arg name="paused" default="true"/>
   <arg name="verbose" default="false"/>
 
-  <group ns="$(arg mav_name)">
+  <group ns="uav1">
     <node pkg="ftc_ctrl" name="ftc_ctrl" type="ftc_ctrl" output="screen" >
-        <rosparam file="$(find ftc_ctrl)/parameters/setup_test.yaml"/>
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
     </node>
     <node pkg="rotors_interface" name="rotors_interface" type="rotors_interface" output="screen">
-        <rosparam file="$(find ftc_ctrl)/parameters/setup_test.yaml"/>
+        <rosparam file="$(find ftc_ctrl)/parameters/simulation.yaml"/>
     </node>
+    <node pkg="offboard" name="offboard_node" type="offboard_node" output="screen" />
   </group>
-  <node pkg="offboard" name="rotor_control_test" type="rotor_control_test" />
-  <node pkg="offboard" name="offboard_node1" type="offboard_node1" output="screen" launch-prefix="gnome-terminal --tab --"/>
+
 
 </launch>
