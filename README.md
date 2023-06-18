@@ -30,25 +30,44 @@ Pay attention to checking the following environment variable
 
 Example 1: fault-tolerant control for a quadrotor UAV with a total rotor failure.
 
-Create a new terminal
+Create a new terminal and run, please using the  setting in 
 
     roslaunch px4 multi_uav_mavros_sitl.launch
 
-Create a new terminal
+Create a new terminal and run
 
-    roslaunch ftc_ctrl testgazebo.launch
+    roslaunch ftc_ctrl setup_sim.launch
 
-Create a new terminal
+Create a new terminal and run
 
     roscd ftc_ctrl && cd scripts
 
 Run at normal model
 
     ./start_rotors.sh hummingbird
-    
+
 Run at failure model
 
     ./stop_rotor.sh hummingbird
+
+Example 2: formation control for multiple quadrotor UAVs.
+
+Create a new terminal and run, please using the  setting in 
+
+    roslaunch px4 multi_uav_mavros_sitl.launch
+
+Create a new terminal and run
+
+    roslaunch ftc_ctrl uavs_sim.launch
+
+Run the chap05.slx (uav_ftc/simulink code/code) in simulink, and wait for the UAV0 taking off
+
+Create a new terminal and run
+
+    roscd ftc_ctrl && cd scripts
+    ./start_uavs.sh hummingbird
+
+
 
 # 注意事项
 
