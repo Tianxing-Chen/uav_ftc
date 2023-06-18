@@ -78,11 +78,9 @@ Run the chap05.slx (uav_ftc/simulink code/code) in simulink, and wait for the UA
 Create a new terminal and run
 
     roscd ftc_ctrl && cd scripts
+<<<<<<< HEAD
     ./start_uavs.sh 
-
-
-
-# 注意事项
-
-在Gazebo运行PX4的情况下，打开QGC，确认MC_FTC_MODE参数是否为1
+=======
+    ./start_uavs.sh
+>>>>>>> c0090fa8b0a60eef42870d92531d4036c6dcfa80
 
